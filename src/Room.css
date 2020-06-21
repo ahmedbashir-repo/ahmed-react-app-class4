@@ -1,4 +1,4 @@
-html, body,#root, .room{
+.room{
     height: 100vh;
 }
 .lit{
@@ -7,6 +7,31 @@ html, body,#root, .room{
 }
 
 .dark{
-    background-color: darkslategrey;
+    background-color: black;
     color: whitesmoke;
+}
+
+.button {
+    background-color: orange;
+    border: 1px solid orange;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.age-button{
+    border-radius:4px;
+}
+
+.incdec-button{
+    background-color: seagreen;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 16px;
 }
