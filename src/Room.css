@@ -1,5 +1,8 @@
+html, body,#root, .room{
+    height: 100vh;
+}
 .lit{
-    background-color: white;
+    background-color: white ;
 
 }
 

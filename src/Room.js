@@ -6,15 +6,15 @@ function Room(){
     // const setLit = state[1];
     const [isLit, setLit] = useState(true);
     let [age, setAge] = useState(22);
-    function updateLit(){
-        setLit(!isLit);   
+    // function updateLit(){
+    //     setLit(!isLit);   
  
-    }
+    // }
     return (
-        <div className = {isLit ? "lit" : "dark"}>
+        <div className = {`room ${isLit ? "lit" : "dark"}`}>
             This is room component: {isLit ? "Lit" : "Dark"} <br/>
             The age is : {age}<br/>
-            <button onClick = {updateLit}>Toggle Light</button><br/>
+            <button onClick = {()=>setLit(!isLit)}>Toggle Light</button><br/>
             <button onClick = {()=>{setAge(++age)}}>Increase Age</button>
         </div>
     )
